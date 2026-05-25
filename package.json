@@ -1,0 +1,30 @@
+{
+  "name": "netbilfly-neural-elite",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "@capacitor/android": "^5.0.0",
+    "@capacitor/core": "^5.0.0",
+    "@capacitor/ios": "^5.0.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@capacitor/cli": "^5.0.0",
+    "@types/react": "^19.2.15",
+    "@types/react-dom": "^19.2.3",
+    "lucide-react": "^1.16.0",
+    "typescript": "^6.0.3",
+    "vite": "^8.0.14"
+  },
+  "scripts": {
+    "dev": "vite --host 0.0.0.0 --port 3000",
+    "start": "vite --host 0.0.0.0 --port 3000",
+    "build": "tsc && vite build",
+    "lint": "tsc --noEmit",
+    "mobile:init": "cap init",
+    "mobile:add-android": "cap add android",
+    "mobile:sync": "cap sync android",
+    "mobile:open": "cap open android"
+  }
+}

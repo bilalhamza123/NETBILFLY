@@ -1,0 +1,13 @@
+{
+  "name": "NETBILFLY — Global Neural Streaming",
+  "short_name": "NETBILFLY",
+  "description": "Experience the world's most advanced IPTV elite neural player. NETBILFLY delivers ultra-high-definition entertainment, custom Xtream servers, and secure parental private catalogs, powered by Gemini semantic intelligence and zero-latency playback.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone",
+    "geolocation"
+  ],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

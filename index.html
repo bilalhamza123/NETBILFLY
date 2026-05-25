@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NETBILFLY — Global Neural IPTV Elite</title>
+    <!-- Tailwind support -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- hls.js for HLS (.m3u8) streaming inside all standard browsers -->
+    <script src="https://cdn.jsdelivr.net/npm/hls.js@1.4.12/dist/hls.min.js"></script>
+    <style>
+      @keyframes neuralEqualizer {
+        0% {
+          height: 10%;
+        }
+        100% {
+          height: 90%;
+        }
+      }
+      /* Clean and eye-friendly dark/cinema scrollbars across the app */
+      ::-webkit-scrollbar {
+        width: 8px;
+        height: 8px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #0B0F19;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #1F2937;
+        border-radius: 4px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #EF4444;
+      }
+      body {
+        margin: 0;
+        background-color: #0B0F19;
+        color: #F3F4F6;
+        font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
+
