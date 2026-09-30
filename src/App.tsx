@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useMemo, useRef } from 'react';
+import { track } from './lib/amplitude';
 import { BUILTIN_SHOWCASE_CHANNELS, ADULT_PRESET_CHANNELS } from './presets';
 import { 
   Play, 
@@ -103,6 +104,10 @@ interface ServerConfig {
 }
 
 export default function App() {
+  useEffect(() => {
+    track("Page Viewed", { page_path: window.location.pathname, page_title: document.title });
+  }, []);
+
   // Primary default credentials requested by the user
   const DEFAULT_SERVER: ServerConfig = {
     host: 'http://atlan2025.me',
@@ -120,6 +125,9 @@ export default function App() {
   });
 
   const [activeTab, setActiveTab] = useState<'live' | 'vod' | 'series' | 'favorites' | 'adult' | 'streamex' | 'playlists' | 'epg'>('playlists');
+  useEffect(() => {
+    track("Content Tab Viewed", { tab: activeTab });
+  }, [activeTab]);
   const [loading, setLoading] = useState<boolean>(true);
   const [errorMsg, setErrorMsg] = useState<string | null>(null);
   
